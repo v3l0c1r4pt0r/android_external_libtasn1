@@ -26,6 +26,7 @@
 #include <string.h>		/* for strverscmp */
 
 #include "libtasn1.h"
+#include "strverscmp.h"
 
 /**
  * asn1_check_version:

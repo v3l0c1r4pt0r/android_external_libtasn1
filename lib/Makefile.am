@@ -28,6 +28,8 @@ pkgconfig_DATA = libtasn1.pc
 
 lib_LTLIBRARIES = libtasn1.la
 
+#libtasn1_la_CFLAGS = -include strverscmp.h
+
 libtasn1_la_SOURCES =	\
 	ASN1.y		\
 	coding.c	\
@@ -44,6 +46,8 @@ libtasn1_la_SOURCES =	\
 	parser_aux.h	\
 	structure.c	\
 	structure.h	\
+	strverscmp.c \
+	strverscmp.h \
 	version.c
 
 libtasn1_la_LIBADD = gllib/libgnu.la
